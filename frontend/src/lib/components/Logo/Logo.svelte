@@ -5,4 +5,4 @@
 	export let width = 200;
 </script>
 
-<img class="c" {height} {width} src={ciso} alt="Ciso-assistant icon" />
+<img class="c a" {height} {width} src={ciso} alt="Ciso-assistant icon" />
