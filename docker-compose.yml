@@ -37,8 +37,9 @@ services:
       - PUBLIC_BACKEND_API_EXPOSED_URL=https://localhost:8443/api
       - PROTOCOL_HEADER=x-forwarded-proto
       - HOST_HEADER=x-forwarded-host
-
-    image: ghcr.io/intuitem/ciso-assistant-community/frontend:latest
+    build:
+      context: ./frontend  # Use local build context
+      dockerfile: Dockerfile  # Ensure the Dockerfile is in the ./frontend folder
     depends_on:
       - backend
 
